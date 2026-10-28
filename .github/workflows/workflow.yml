@@ -31,10 +31,8 @@ jobs:
           python -m pip install flake8==7.1.2 nose2
 
       - name: Lint with flake8
-        run: |
-          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 
       - name: Run unit tests with nose2
-        run: |
-          nose2
+        run: nose2
 ```
